@@ -6,6 +6,141 @@
     "telegram",
     "voice-chat",
     "pyrogram",
-    "pytgcalls"
-  ]
+    "kurigram",
+    "pytgcalls",
+    "ffmpeg"
+  ],
+  "env": {
+    "API_ID": {
+      "description": "Telegram API ID from my.telegram.org",
+      "required": true
+    },
+    "API_HASH": {
+      "description": "Telegram API Hash from my.telegram.org",
+      "required": true
+    },
+    "BOT_TOKEN": {
+      "description": "Telegram Bot Token from @BotFather",
+      "required": true
+    },
+    "MONGO_URI": {
+      "description": "MongoDB connection URI",
+      "required": true
+    },
+    "OWNER_ID": {
+      "description": "Your Telegram User ID",
+      "required": true
+    },
+
+    "DB_NAME": {
+      "description": "MongoDB database name",
+      "value": "vcfighter"
+    },
+    "SUDO_USERS": {
+      "description": "Optional sudo user IDs, comma separated",
+      "value": ""
+    },
+    "LOG_CHANNEL": {
+      "description": "Optional log channel/group ID",
+      "value": "0"
+    },
+    "DEFAULT_STREAM_TYPE": {
+      "description": "Default stream type: audio or video",
+      "value": "audio"
+    },
+    "DEFAULT_QUALITY": {
+      "description": "Default quality: low, medium or high",
+      "value": "medium"
+    },
+    "DEFAULT_NOISE_SUPPRESSION": {
+      "description": "Enable noise suppression",
+      "value": "false"
+    },
+    "DEFAULT_VOLUME": {
+      "description": "Default volume",
+      "value": "1.0"
+    },
+    "DEFAULT_BASS": {
+      "description": "Default bass level",
+      "value": "0"
+    },
+    "DEFAULT_PITCH": {
+      "description": "Default pitch: normal, demon or chipmunk",
+      "value": "normal"
+    },
+    "DEFAULT_ECHO": {
+      "description": "Enable echo",
+      "value": "false"
+    },
+    "DEFAULT_COMPRESSOR": {
+      "description": "Enable compressor",
+      "value": "false"
+    },
+    "DEFAULT_LIMITER": {
+      "description": "Enable limiter",
+      "value": "false"
+    },
+    "DEFAULT_MODE": {
+      "description": "Default VC mode: dm or auto",
+      "value": "dm"
+    },
+    "RECORDINGS_DIR": {
+      "description": "Recordings directory",
+      "value": "recordings"
+    },
+    "MAX_RECORDING_AGE": {
+      "description": "Maximum recording age in seconds",
+      "value": "3600"
+    },
+    "STARTUP_SESSIONS": {
+      "description": "Optional Pyrogram string sessions, comma separated",
+      "value": ""
+    },
+    "BOT_NAME": {
+      "description": "Bot name",
+      "value": "VCFighter"
+    },
+    "BOT_VERSION": {
+      "description": "Bot version",
+      "value": "2.0"
+    },
+    "SUPPORT_URL": {
+      "description": "Support group URL",
+      "value": "https://t.me/Zcziiy"
+    },
+    "SOURCE_URL": {
+      "description": "Source repository URL",
+      "value": "https://github.com/riteshsingh12965-bit/VCFIGHTER"
+    },
+    "SUPPORT_CHAT": {
+      "description": "Support chat URL",
+      "value": "https://t.me/Zcziiy"
+    },
+    "SUPPORT_CHANNEL": {
+      "description": "Support/update channel URL",
+      "value": "https://t.me/Zcziiy"
+    },
+    "VC_PICS": {
+      "description": "Optional bot picture URLs, comma separated",
+      "value": ""
+    },
+    "START_FIRE_EFFECT": {
+      "description": "Enable start fire effect",
+      "value": "true"
+    },
+    "FIRE_FRAME_DELAY": {
+      "description": "Fire animation frame delay",
+      "value": "0.4"
+    },
+    "DING_DONG_DELETE": {
+      "description": "Delete start animation after completion",
+      "value": "true"
+    }
+  },
+  "formation": {
+    "worker": {
+      "quantity": 1,
+      "size": "eco"
+    }
+  }
 }
