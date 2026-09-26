@@ -1,0 +1,11 @@
+{
+  "name": "VCFIGHTER",
+  "description": "VCFIGHTER Telegram Voice Chat Bot",
+  "repository": "https://github.com/riteshsingh12965-bit/VCFIGHTER",
+  "keywords": [
+    "telegram",
+    "voice-chat",
+    "pyrogram",
+    "pytgcalls"
+  ]
+}
